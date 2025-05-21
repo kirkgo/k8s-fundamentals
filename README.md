@@ -1,1 +1,3 @@
-# k8s-fundamentals
+# Kubernetes Fundamentals
+
+Repository for classroom about Kubernetes Fundamentals
