@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hellok8s
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hellok8s
+  template:
+    metadata:
+      labels:
+        app: hellok8s
+    spec:
+      containers:
+        - image: kirkgo/hellok8s:v3
+          name: hellok8s-container
+          ports:
+            - containerPort: 4567
